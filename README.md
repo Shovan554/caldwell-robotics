@@ -2,12 +2,6 @@
 
 This repository hosts the official website for the Caldwell Robotics Club, built with React and styled using Tailwind CSS. Feel free to explore, contribute, and submit enhancements!
 
-## Table of Contents
-- [Installation](#installation)
-- [Running the Project](#running-the-project)
-- [Contributing](#contributing)
-- [Pull Requests](#pull-requests)
-
 ## Installation
 
 To get started with the project, you need to clone the repository and install the dependencies. Follow these steps:
