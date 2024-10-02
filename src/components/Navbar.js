@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png'; // assuming your logo is here
-import '../styles/navbar.css'; // Import your CSS
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"; // assuming your logo is here
+import "../styles/navbar.css"; // Import your CSS
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,18 +32,28 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
-      <div className={`navbar-links ${isOpen ? 'block' : 'hidden'} md:flex`}>
-        <Link to="/" className="navbar-link">Home</Link>
-        <Link to="/events" className="navbar-link">Events</Link>
+      <div className={`navbar-links ${isOpen ? "block" : "hidden"} md:flex`}>
+        <Link to="/" className="navbar-link">
+          Home
+        </Link>
+        <Link to="/events" className="navbar-link">
+          Events
+        </Link>
 
-        <Link to="/team" className="navbar-link">Team Members</Link>
-        <Link to="/projects" className="navbar-link">Projects</Link>
+        <Link to="/team" className="navbar-link">
+          Team Members
+        </Link>
+        <Link to="/projects" className="navbar-link">
+          Projects
+        </Link>
 
-        <Link to="/about" className="navbar-link">About Us</Link>
+        <Link to="/about" className="navbar-link">
+          About Us
+        </Link>
 
-        <Link to="/gallery" className="navbar-link">Gallery</Link>
-
-
+        <Link to="/gallery" className="navbar-link">
+          Gallery
+        </Link>
       </div>
     </nav>
   );

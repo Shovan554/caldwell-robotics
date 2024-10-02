@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import './App.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Team from "./pages/Team";
+import "./App.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 function App() {
   return (
     <Router>
@@ -11,6 +12,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           {/* We will add more routes for other pages later */}
+
+          {/* links to team members page */}
+          <Route path="/team" element={<Team />} />
         </Routes>
       </div>
     </Router>
