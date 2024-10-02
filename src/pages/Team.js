@@ -76,13 +76,13 @@ const Team = () => {
   };
   return (
     <main className="main-container">
-      <div className="sub-header-one h-[40vh] flex flex-col items-center justify-center bg-black text-white">
+      <div className="sub-header-one h-[40vh] flex flex-col items-center justify-center bg-gradient-to-r from-gray-700 to-slate-700 text-white">
         <h1 className="sm:text-[3rem] font-extrabold">
           <span className="text-red-600 mr-4 uppercase">Robotics</span>
           TEAM
         </h1>
       </div>
-      <div className="sub-header-two text-center bg-orange-300 text-white py-[2rem]">
+      <div className="sub-header-two text-center bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-[2rem]">
         <h2 className="sm:text-[2rem] font-extrabold uppercase">
           Executive and general Members
         </h2>
@@ -143,7 +143,7 @@ const Team = () => {
           imgSrc={executiveMembers.nine.imgSrc}
         />
       </div>
-      <div className="sub-header-three text-center bg-orange-300 text-white py-[1rem]">
+      <div className="sub-header-three text-center bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-[1rem]">
         <h2 className="sm:text-[2rem] font-extrabold uppercase">Our Advisor</h2>
       </div>
       <div className="advisor-container flex justify-center items-center mt-[5rem]">
@@ -154,7 +154,7 @@ const Team = () => {
           imgSrc={executiveMembers.advisor.imgSrc}
         />
       </div>
-      <div className="sub-header-four text-center bg-orange-300 text-white py-[1rem]">
+      <div className="sub-header-four text-center bg-gradient-to-r from-violet-600 to-indigo-600 text-white py-[1rem]">
         <h2 className="sm:text-[2rem] font-extrabold uppercase">
           Website Developers
         </h2>
@@ -166,27 +166,23 @@ const Team = () => {
             alt="shovan"
             className="w-[7rem] rounded-full "
           ></img>
-          <h2 className="sm:text-xl font-extrabold uppercase mt-1">
-            Shovan Raut
-          </h2>
+          <h2 className="sm:text-xl font-bold  mt-1">Shovan Raut</h2>
         </section>
         <section className="flex flex-col justify-center items-center">
           <img
             src="./narayan.jpg"
-            alt="shovan"
+            alt="narayan"
             className="w-[7rem] rounded-full"
           ></img>
-          <h2 className="sm:text-xl font-extrabold uppercase mt-1">
-            Narayan Khanal
-          </h2>
+          <h2 className="sm:text-xl font-bold mt-1">Narayan Khanal</h2>
         </section>
         <section className="flex flex-col justify-center items-center">
           <img
             src="./Dikshya.jpg"
-            alt="shovan"
+            alt="dikshya"
             className="w-[7rem] rounded-full"
           ></img>
-          <h2 className="sm:text-xl font-bold uppercase mt-1">Dikshya Giri</h2>
+          <h2 className="sm:text-xl font-bold mt-1">Dikshya Giri</h2>
         </section>
       </div>
     </main>
