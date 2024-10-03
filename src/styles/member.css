@@ -1,0 +1,112 @@
+/* Card container */
+.member-card-container {
+    position: relative;
+    width: 22rem; /* Reduced width for cards */
+    height: 21rem; /* Reduced height for cards */
+    padding-top: 6rem; /* Space at the top for the profile picture */
+    padding: 15px;
+    background: linear-gradient(135deg, #ffffff, #bdd3dd); /* Gradient background */
+    border: 2px solid #e0e0e0; /* Light border */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is well spaced */
+    margin-bottom: 80px; /* Space between cards */
+  }
+  
+  .member-card-container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Main info section */
+  .member-main-info {
+    background-color: rgb(255, 255, 255); /* Slight transparency for the inner section */
+    width: 20rem;
+    height: 19rem;
+    border-radius: 15px;
+    padding: 1rem 1.5rem;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Member Name (with portfolio link) */
+  .member-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40; /* Dark text */
+    text-decoration: none;
+  }
+  
+  .member-name:hover {
+    color: #007bff; /* Change to blue when hovered */
+  }
+  
+  /* Member position */
+  .member-position {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6c757d; /* Grey text for position */
+    margin-top: 0.5rem;
+  }
+  
+  /* Information paragraph */
+  .member-info {
+    font-size: 1rem;
+    color: #7c868f;
+    margin-top: 1rem;
+  }
+  
+  /* Profile image */
+  .profile-image {
+    position: absolute;
+    top: -4.8rem; /* Positioned above the card */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .profile-pic {
+    width: 6.5rem; /* Slightly smaller profile image */
+    height: 6.5rem;
+    border-radius: 50%;
+    border: 3px solid #e0e0e0; /* Border around the image */
+    background-color: #fff; /* Background to highlight the image */
+    z-index: 1; /* Ensures the image is above the card */
+  }
+  
+  /* Social Media Icons */
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Social Icon */
+  .social-icon {
+    color: #6c757d;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #007bff; /* Blue on hover */
+  }
+  
+  /* Team section layout */
+  .members-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards in a row */
+    gap: 2rem; /* Gap between cards */
+    justify-items: center; /* Center the cards */
+    margin-top: 2rem;
+  }
+  
+  /* Faculty Advisor section */
+  .advisor-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem; /* Space below faculty card */
+  }
