@@ -1,7 +1,46 @@
+/* Ensure the App container takes the full height of the viewport */
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure it covers the entire height of the viewport */
 }
 
+/* Main content should grow to push the footer down */
+.content {
+  flex: 1;
+}
+
+/* Footer styling */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+.footer-left {
+  font-size: 1rem;
+}
+
+.footer-left a {
+  color: #61dafb; /* Link color */
+  text-decoration: none;
+}
+
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  font-size: 1rem;
+}
+
+/* Other styles for App components */
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,8 +1,14 @@
+import React from 'react';
+import Lottie from 'react-lottie'; // Importing Lottie for animation
 import MemberCard from "../components/MemberCard";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import '../styles/team.css'; // Importing the new CSS file
 
 const Team = () => {
+  
+
+
+
   const executiveMembers = {
     advisor: {
       name: "Dr. Vlad Veksler",
@@ -116,30 +122,44 @@ const Team = () => {
       portfolio: null, // No portfolio for now
     },
   };
+
+
+
   const teamMembers = Object.values(executiveMembers).filter(
     (member) => member !== executiveMembers.advisor
   );
+
+
+
   return (
     <main className="team-container">
       {/* Meet the Team Title */}
       <div className="team-header">
+    
         <h1 className="team-title">
           Meet the <span className="team-highlight">Team</span>
+          
         </h1>
       </div>
 
-      {/* Faculty Advisor Card (Centered) */}
-      <div className="advisor-container">
-        <MemberCard
-          name={executiveMembers.advisor.name}
-          position={executiveMembers.advisor.position}
-          information={executiveMembers.advisor.information}
-          imgSrc={executiveMembers.advisor.imgSrc}
-          linkedinLink={executiveMembers.advisor.linkedinLink}
-          githubLink={executiveMembers.advisor.githubLink}
-          resumeLink={executiveMembers.advisor.resumeLink}
-          portfolio={executiveMembers.advisor.portfolio}
-        />
+      {/* Faculty Advisor Card with animation on the right */}
+      <div className="advisor-animation-container">
+        {/* Faculty Card */}
+        <div className="advisor-card">
+          <MemberCard
+            name={executiveMembers.advisor.name}
+            position={executiveMembers.advisor.position}
+            information={executiveMembers.advisor.information}
+            imgSrc={executiveMembers.advisor.imgSrc}
+            linkedinLink={executiveMembers.advisor.linkedinLink}
+            githubLink={executiveMembers.advisor.githubLink}
+            resumeLink={executiveMembers.advisor.resumeLink}
+            portfolio={executiveMembers.advisor.portfolio}
+          />
+        </div>
+
+        {/* Animation on the right */}
+        
       </div>
 
       {/* Team Member Cards */}
