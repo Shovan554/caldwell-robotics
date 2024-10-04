@@ -16,8 +16,8 @@ const Team = () => {
       information:
         "Assistant Professor of Computer Science at Caldwell University, focusing on AI and Human-Computer Interaction.",
       imgSrc: "./Dr. Veksler.png",
-      linkedinLink: "https://linkedin.com",
-      githubLink: "https://github.com",
+      linkedinLink: "https://www.linkedin.com/in/vdveksler/",
+      githubLink: "https://github.com/vdv7",
       resumeLink: null, // No resume for now
       portfolio: null, // No portfolio for now
     },
@@ -31,17 +31,17 @@ const Team = () => {
       linkedinLink: "https://linkedin.com",
       githubLink: "https://github.com",
       resumeLink: null, // No resume for now
-      portfolio: null, // No portfolio for now
+      portfolio: 'https://sites.google.com/view/anishpandey/home', // No portfolio for now
     },
     two: {
       name: "Shovan Raut",
       position: "Vice-President",
       information:
         "Research Assistant at CogAI, passionate about robotics and machine learning.",
-      imgSrc: "./shovan.jpg",
+      imgSrc: "./shovan.png",
       linkedinLink: "https://www.linkedin.com/in/shovan-raut-81537b18a/",
       githubLink: "https://github.com/Shovan554",
-      resumeLink: "/path/to/shovan_resume.pdf", // Replace with the actual resume link
+      resumeLink: "",
       portfolio: "https://shovanraut.vercel.app", // Your portfolio
     },
     three: {
