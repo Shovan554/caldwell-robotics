@@ -16,7 +16,7 @@ const Footer = () => {
           </a>{" "}
           &{" "}
           <a
-            href=""
+            href="https://nkhanal.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
           >
