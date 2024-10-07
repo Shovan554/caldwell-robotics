@@ -1,0 +1,86 @@
+/* Project Page Background */
+.project-page-container {
+    padding: 2rem;
+    background-color: #f4f4f9; /* Light background for the entire page */
+}
+
+/* Card Container */
+.project-card {
+    background: linear-gradient(90deg, #0e2942, #183149);
+    border: 2px solid #130e0e; /* Light border around the card */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffffff; /* Light background for contrast */
+    margin-top: 20px;
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for the card */
+    height: auto; /* Adjust height based on content */
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Project Details Section */
+.project-details {
+    width: 100%; /* Full width for description */
+}
+
+/* Project Name */
+.project-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #a6e84a; /* White text color to contrast with the gradient background */
+    margin-bottom: 1px;
+}
+
+.project-name:hover {
+    color: #f1c40f; /* Change color on hover */
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1.0rem;
+    color: #ffffff; /* Light text for description */
+    margin-bottom: 15px;
+    width: 100%; /* Full width for description */
+}
+
+/* Team Section */
+.project-team {
+    margin-top: 10px;
+}
+
+.project-team-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a6e84a; /* Yellow for the team section title */
+}
+
+.project-team ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-team li {
+    font-size: 1rem;
+    color: #ffffff; /* White text for team members */
+    margin-bottom: 5px;
+}
+
+/* GitHub Link */
+.github-link a {
+    font-size: 1.1rem;
+    color: #a6e84a; /* Yellow text for GitHub link */
+    text-decoration: none;
+}
+
+.github-link a:hover {
+    text-decoration: underline;
+    color: #a6e84a; /* Darker yellow on hover */
+}

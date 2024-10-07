@@ -1,0 +1,69 @@
+/* events.css */
+
+/* Page container */
+.events-page {
+  padding: 2rem;
+  background-color: #f4f4f9; /* Light background */
+  min-height: 100vh; /* Full height to push the footer down */
+}
+
+/* Title for the Events page */
+.events-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  color: #2d2d2d;
+  text-align: center; /* Center the title */
+  margin-bottom: 2rem;
+}
+
+/* Section headers for Upcoming and Past Events */
+.section-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #374151; /* Tailwind's gray-700 */
+  text-align: center; /* Center the section headers */
+  margin-bottom: 1rem;
+}
+
+/* Styling for both sections */
+.upcoming-events-section,
+.past-events-section {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center; /* Center the events */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Divider between the sections */
+.events-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e5e7eb; /* Light gray */
+  margin: 2rem 0;
+}
+
+/* Event card container styling (if necessary to match components) */
+.event-card {
+  margin-bottom: 20px;
+}
+/* events.css */
+
+/* Calendar Animation */
+.calendar-animation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; /* Add space below the animation */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .events-title {
+    font-size: 2rem;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+  }
+}

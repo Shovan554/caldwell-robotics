@@ -137,7 +137,7 @@ const Team = () => {
       <div className="team-header">
     
         <h1 className="team-title">
-          Meet the <span className="team-highlight">Team</span>
+          MEET the <span className="team-highlight">TEAM</span>
           
         </h1>
       </div>

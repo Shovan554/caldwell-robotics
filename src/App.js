@@ -2,23 +2,27 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
-import Footer from "./components/Footer"; // Import the Footer component
+import Events from "./pages/Events"; // Import the Events page
+import AboutUs from "./pages/AboutUs";
+import ProjectPage from "./pages/ProjectPage";
+import Footer from "./components/Footer";
 import "./App.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        {/* Content wrapper to push footer down */}
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/team" element={<Team />} />
+            <Route path="/events" element={<Events />} /> {/* Add Events route */}
+            <Route path="/aboutUs" element={<AboutUs />} /> {/* Add Events route */}
+            <Route path="/projectPage" element={<ProjectPage />} /> {/* Add Events route */}
           </Routes>
         </div>
-        <Footer /> {/* Include the footer at the bottom */}
+        <Footer />
       </div>
     </Router>
   );

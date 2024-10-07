@@ -43,11 +43,11 @@ const Navbar = () => {
         <Link to="/team" className="navbar-link">
           Team Members
         </Link>
-        <Link to="/projects" className="navbar-link">
+        <Link to="/projectPage" className="navbar-link">
           Projects
         </Link>
 
-        <Link to="/about" className="navbar-link">
+        <Link to="/aboutUs" className="navbar-link">
           About Us
         </Link>
 

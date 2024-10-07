@@ -1,0 +1,110 @@
+/* aboutUs.css */
+
+/* About Us Title */
+.about-us-page {
+    padding: 2rem;
+  background-color: #f4f4f9; /* Light background */
+}
+.about-us-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2d2d2d;
+    margin-top: 1rem;
+  }
+  
+  /* General Container */
+  .about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Padding on the sides */
+    background-color: #f4f4f9;
+  }
+  
+  /* General Section Styles */
+  section {
+    margin-bottom: 3rem;
+    padding: 0 15px; /* Adding padding for each section */
+    border-bottom: 1px solid #e0e0e0; /* Separator between sections */
+    padding-bottom: 2rem; /* Padding before the separator */
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000; /* Subtopics colored */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* People Animation */
+  .people-animation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Equipment List */
+  .equipment-section ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  .equipment-section li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Makerspace Section */
+  .makerspace-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .makerspace-section li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Liability Link */
+  .liability-link {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .liability-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Vision Section List */
+  .vision-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .vision-section li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vision-section strong {
+    color: #000;
+  }
+  
+  /* Adding padding for better spacing between sections */
+  .mission-section,
+  .who-we-are-section,
+  .what-we-do-section,
+  .connections-section,
+  .equipment-section,
+  .makerspace-section,
+  .vision-section {
+    padding: 0 2rem; /* Increase side padding for all sections */
+  }
+  
+  

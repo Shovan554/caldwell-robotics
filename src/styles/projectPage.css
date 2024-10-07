@@ -1,0 +1,50 @@
+.project-page {
+    background-color: #f4f4f9;
+    padding: 1rem;
+    min-height: 100vh; /* Full height to push the footer down */
+}
+
+
+.projects-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #2d2d2d;
+    font-weight: bold;
+}
+
+/* Page Container */
+.project-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    position: relative;
+    background-color: #f4f4f9;
+    margin-top: -105px; /* Negative margin to move it upwards */
+
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+/* Coding Animation - Moved upwards */
+.coding-animation-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1490px;
+    margin-top: -165px; /* Negative margin to move it upwards */
+}
