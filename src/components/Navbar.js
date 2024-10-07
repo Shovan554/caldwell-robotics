@@ -16,6 +16,8 @@ const Navbar = () => {
         <img src={logo} alt="Caldwell Robotics" className="navbar-logo" />
         <h1 className="navbar-title">Caldwell Robotics</h1>
       </div>
+
+      {/* Hamburger Menu Icon */}
       <div className="navbar-menu-icon md:hidden" onClick={toggleMenu}>
         <svg
           className="menu-icon"
@@ -32,6 +34,8 @@ const Navbar = () => {
           ></path>
         </svg>
       </div>
+
+      {/* Navbar Links */}
       <div className={`navbar-links ${isOpen ? "block" : "hidden"} md:flex`}>
         <Link to="/" className="navbar-link">
           Home
@@ -39,18 +43,15 @@ const Navbar = () => {
         <Link to="/events" className="navbar-link">
           Events
         </Link>
-
         <Link to="/team" className="navbar-link">
           Team Members
         </Link>
         <Link to="/projectPage" className="navbar-link">
           Projects
         </Link>
-
         <Link to="/aboutUs" className="navbar-link">
           About Us
         </Link>
-
         <Link to="/gallery" className="navbar-link">
           Gallery
         </Link>
