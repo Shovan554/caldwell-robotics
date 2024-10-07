@@ -1,50 +1,68 @@
 /* Team container */
 .team-container {
-    padding: 20px;
-    background-color: #f3f4f6;
-  }
-  
-  /* Header styling */
-  .team-header {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
+  padding: 20px;
+  background-color: #f3f4f6;
+}
+
+/* Header styling */
+.team-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 50px; /* Reduced margin for better spacing */
+  color: #2d2d2d;
+  margin-top: 3rem;
+  padding-bottom: 50px;
+}
+
+.team-highlight {
+  color: #ff6347; /* Highlight color */
+}
+
+/* Advisor and animation container */
+.advisor-animation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* Advisor card container */
+.advisor-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Members card grid */
+.members-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Added gap between member cards */
+  margin-top: 4px;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  /* Title adjustments for mobile */
   .team-title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin-bottom:120px;
-    color: #2d2d2d;
-    margin-top: 3rem;
+      font-size: 2.5rem; /* Reduced font size for mobile */
+      margin-bottom: 30px;
   }
-  
-  .team-highlight {
-    color: #ff6347; /* Highlight color */
-  }
-  
-  /* Advisor and animation container */
+
+  /* Advisor and animation container on mobile */
   .advisor-animation-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+      flex-direction: column; /* Stack advisor card and animation vertically */
+      align-items: center;
   }
-  
-  /* Advisor card container */
-  .advisor-card {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Animation container */
- 
-  
-  /* Team members card grid */
+
+  /* Members card grid for mobile */
   .members-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    margin-top: 4px;
+      grid-template-columns: 1fr; /* Stack cards in a single column on mobile */
+      gap: 20px;
   }
-  
+}
