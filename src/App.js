@@ -6,6 +6,7 @@ import Events from "./pages/Events"; // Import the Events page
 import AboutUs from "./pages/AboutUs";
 import ProjectPage from "./pages/ProjectPage";
 import Footer from "./components/Footer";
+import GalleryPage from "./pages/Gallery";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
             <Route path="/events" element={<Events />} /> {/* Add Events route */}
             <Route path="/aboutUs" element={<AboutUs />} /> {/* Add Events route */}
             <Route path="/projectPage" element={<ProjectPage />} /> {/* Add Events route */}
+            <Route path="/gallery" element={<GalleryPage/>} /> {/* Add Events route */}
+
           </Routes>
         </div>
         <Footer />
