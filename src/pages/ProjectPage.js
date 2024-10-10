@@ -21,6 +21,7 @@ const ProjectPage = () => {
       team: ['Entire Team'],
       githubLink: '',
       projectLink: null,
+      imgSrc: 'gallery/projects/image1.png'  // Reference from the main public folder
     },
     {
       name: 'Astro Bot',
@@ -28,9 +29,8 @@ const ProjectPage = () => {
       team: ['Anish Pandey', 'Shovan Raut', 'Dibas Dauliya', 'Dikshya Giri'],
       githubLink: 'https://github.com/dibasdauliya/space-apps-hackathon',
       projectLink: 'https://caldwell-astrobots.vercel.app/',
+      imgSrc: 'gallery/projects/image2.png'  // Reference from the main public folder
     },
-    
-    
   ];
 
   return (
@@ -56,6 +56,7 @@ const ProjectPage = () => {
               team={project.team}
               githubLink={project.githubLink}
               projectLink={project.projectLink}
+              imgSrc={project.imgSrc}  
             />
           ))}
         </div>

@@ -2,12 +2,14 @@ import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import '../styles/projectCard.css'; // Importing the ProjectCard CSS
 
-const ProjectCard = ({ name, description, team, githubLink, projectLink }) => {
+const ProjectCard = ({ name, description, team, githubLink, projectLink, imgSrc }) => {
   return (
     <div className="project-card">
+      {/* Project Image */}
+      
+
       {/* Project Details Section */}
       <div className="project-details">
-        {/* Project Name with Link or plain name if no project link */}
         {projectLink ? (
           <a href={projectLink} target="_blank" rel="noopener noreferrer" className="project-name">
             {name}
@@ -15,11 +17,11 @@ const ProjectCard = ({ name, description, team, githubLink, projectLink }) => {
         ) : (
           <h2 className="project-name">{name}</h2>
         )}
-
-        {/* Project Description */}
+        <div className="project-image-container">
+        <img src={imgSrc} alt={name} className="project-image" />
+      </div>
         <p className="project-description">{description}</p>
 
-        {/* Worked On By Section */}
         <div className="project-team">
           <h3 className="project-team-title">Contributors:</h3>
           <ul>
@@ -29,7 +31,6 @@ const ProjectCard = ({ name, description, team, githubLink, projectLink }) => {
           </ul>
         </div>
 
-        {/* GitHub Link */}
         {githubLink && (
           <div className="github-link">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
