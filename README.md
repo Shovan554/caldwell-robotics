@@ -27,10 +27,7 @@ To get started with the project, you need to clone the repository and install th
     ```bash
     npm install
     ```
-    Or using Yarn:
-    ```bash
-    yarn install
-    ```
+  
 
 ## Running the Project
 
