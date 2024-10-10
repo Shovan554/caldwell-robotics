@@ -97,7 +97,7 @@ const Team = () => {
       linkedinLink: "https://www.linkedin.com/in/narayankhanal/",
       githubLink: "https://github.com/Nkhanal2002",
       resumeLink: null, // No resume for now
-      portfolio: null, // No portfolio for now
+      portfolio: "https://nkhanal.vercel.app", // No portfolio for now
     },
     eight: {
       name: "Krenjila Sharma",

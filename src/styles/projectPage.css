@@ -1,15 +1,15 @@
+/* General Styles for Desktop */
 .project-page {
     background-color: #f4f4f9;
     padding: 1rem;
     min-height: 100vh; /* Full height to push the footer down */
 }
 
-
 .projects-title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 4rem; /* Adjusted margin for spacing */
 }
 
 /* Page Title */
@@ -17,7 +17,6 @@
     font-size: 3.5rem;
     font-weight: bold;
     color: #2d2d2d;
-    font-weight: bold;
 }
 
 /* Page Container */
@@ -28,8 +27,7 @@
     background-color: #fff;
     position: relative;
     background-color: #f4f4f9;
-    margin-top: -105px; /* Negative margin to move it upwards */
-
+    margin-top: -105px; /* Negative margin to move it upwards for desktop */
 }
 
 /* Projects Grid */
@@ -41,10 +39,64 @@
     margin-bottom: 2rem;
 }
 
-/* Coding Animation - Moved upwards */
+/* Coding Animation */
 .coding-animation-right {
     display: flex;
     justify-content: flex-end;
     margin-left: 1490px;
-    margin-top: -165px; /* Negative margin to move it upwards */
+    margin-top: -165px; /* Negative margin to move it upwards for desktop */
+}
+
+/* Responsive Styles for Tablet and Mobile */
+@media (max-width: 768px) {
+    /* Title and container adjustments */
+    .projects-title-container {
+        margin-top: 3rem; /* Increase top margin for more space */
+    }
+
+    /* Reduce title size on smaller screens */
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    /* Page Container */
+    .project-page-container {
+        padding: 20px 10px; /* Reduce padding for smaller screens */
+        margin-top: 0; /* Remove negative margin to avoid overlap */
+    }
+
+    /* Adjust projects grid to one column on mobile */
+    .projects-grid {
+        grid-template-columns: 1fr; /* One column on mobile */
+        gap: 15px;
+    }
+
+    /* Adjust animation size and placement on mobile */
+    .coding-animation-right {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 0; /* Remove negative margin */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce title size on very small screens */
+    .page-title {
+        font-size: 2rem;
+    }
+
+    /* Further adjust padding for very small screens */
+    .project-page-container {
+        padding: 10px 5px;
+    }
+
+    /* Make the grid even more compact */
+    .projects-grid {
+        gap: 10px;
+    }
+
+    /* Further adjust animation size */
+    .coding-animation-right {
+        margin-top: 10px; /* Small positive margin to ensure no overlap with the title */
+    }
 }
