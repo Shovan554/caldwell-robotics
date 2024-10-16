@@ -107,22 +107,66 @@
     padding: 0 2rem; /* Increase side padding for all sections */
   }
   
+  .equipment-section{
+    margin-top: 5rem;
+  }
+
 
   /* trying to make a slider for 4 of the sections */
   .slider-section-container{
-    background-color: #ffffff; /* White background for the boxes */
-    border: 1px solid #e0e0e0; /* Light gray border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 30px; /* Padding inside the boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a card-like effect */
-    margin-bottom: 2rem; /* Spacing between the sections */
+    border-radius: 30px;
+    padding: 15px;
+    box-sizing: border-box; /* Ensures padding is included in width and height */
+    height: 300px; /* Set a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically centers the content */
+    text-align: center; /* Center the text */
+    margin: 0 20px; /* Add space between cells */
+  }
+
+  .mission-section{
+    background: linear-gradient(90deg, #f598a8, #fab397);       
+  }
+
+  .who-we-are-section{
+    background: linear-gradient(90deg, #fab397, #f598a8);
+  }
+
+  .what-we-do-section{
+    background: linear-gradient(90deg, #f598a8, #fab397); 
+  }
+
+  .connections-section{
+    background: linear-gradient(90deg, #fab397, #f598a8);
   }
 
   .slider-section-container .section-title{
     text-align: center;
+    font-weight: bolder;
+    color: #fefefe;
+    
   }
 
   .slider-section-container p{
     text-align: justify;
     padding: 10px;
+    color: #fefefe;
   }
+
+  .flickity-button {
+    width: 60px;
+    color: #f4f4f95f;
+    position: absolute;
+    background: hsla(0, 0%, 16%, 0);
+    height: 100%;
+    border-radius: 0% ;
+    border: none;
+  }
+  .flickity-button:hover {
+    color: #f4f4f9;
+    background: hsla(0, 0%, 16%, 0);
+  }
+
+  /* end of slider */ 
+

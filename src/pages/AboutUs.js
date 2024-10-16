@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Lottie from 'react-lottie';
 import peopleAnimation from '../assets/animations/people.json'; // Animation for visual appeal
-import '../styles/aboutUs.css'; // Assuming you will create an appropriate CSS file
 import Flickity from 'flickity'; //Framework for the slider
+import 'flickity/css/flickity.css';
+import '../styles/aboutUs.css'; // Assuming you will create an appropriate CSS file
 
 const AboutUs = () => {
   // Lottie animation options
@@ -14,6 +15,27 @@ const AboutUs = () => {
       preserveAspectRatio: 'xMidYMid slice',
     },
   };
+
+  const carouselRef = useRef(null);
+
+  // Initialize Flickity inside a useEffect hook
+  useEffect(() => {
+    const flickityInstance = new Flickity(carouselRef.current, {
+      // Flickity options
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: true,
+      pageDots: true,
+      autoPlay: 3000,
+      pauseAutoPlayOnHover: false,
+    });
+
+    return () => {
+      flickityInstance.destroy(); // Clean up Flickity instance on unmount
+    };
+  }, []);
+
 
   return (
     
@@ -27,7 +49,7 @@ const AboutUs = () => {
         <Lottie options={defaultOptions} height={300} width={300} />
       </div>
 
-      <div class = "main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+      <div class = "main-carousel" ref={carouselRef}>
 
         {/* Mission Section */}
         <div class="carousel-cell">
@@ -59,7 +81,7 @@ const AboutUs = () => {
         {/* What We Do Section */}
         <div class="carousel-cell">
           <section className="what-we-do-section slider-section-container">
-            <h2 className="section-title">What Do We Do?</h2>
+            <h2 className="section-title">What We Do</h2>
             <p>
               At Caldwell Robotics, we inspire and equip students with the skills and knowledge to excel in
               robotics and engineering. We participate in prestigious competitions and hackathons, including
@@ -73,7 +95,7 @@ const AboutUs = () => {
         {/* Connections Section */}
         <div class = "carousel-cell">
           <section className="connections-section slider-section-container">
-            <h2 className="section-title">Connections</h2>
+            <h2 className="section-title">Our Connections</h2>
             <p>
               We collaborate with STEM Advance, the Department of Business and Computer Science, and the Vice
               President for Academic Affairs to ensure academic rigor and entrepreneurial thinking. As a
