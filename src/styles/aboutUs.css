@@ -149,7 +149,7 @@
   }
 
   .slider-section-container p{
-    text-align: justify;
+    text-align: center;
     padding: 10px;
     color: #fefefe;
   }
@@ -168,5 +168,21 @@
     background: hsla(0, 0%, 16%, 0);
   }
 
+  @media screen and (max-width: 612px) {
+    .slider-section-container {
+        height: 400px;
+        font-size: 14px;
+
+    }
+  }
+  @media screen and (max-width: 451px) {
+    .slider-section-container {
+        height: 450px;
+        font-size: 13px;
+    }
+    .about-us-page {
+      padding: 1rem;
+  }
+  }
   /* end of slider */ 
 
