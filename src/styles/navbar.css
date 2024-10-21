@@ -1,3 +1,32 @@
+/* Slide-in from top */
+@keyframes slideInDown {
+  0% {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Apply the slide-in animation */
+.navbar {
+  animation: slideInDown 0.8s ease-out forwards;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #000000;
+  width: 100%;
+  position: relative;
+}
+
+.navbar-links {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Other existing styles remain unchanged */
 /* Navbar Container */
 .navbar {
   display: flex;

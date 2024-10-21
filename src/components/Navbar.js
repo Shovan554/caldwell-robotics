@@ -1,17 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"; // assuming your logo is here
 import "../styles/navbar.css"; // Import your CSS
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    // Trigger the navbar to slide in when the component is mounted
+    setShowNavbar(true);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${showNavbar ? 'slide-in-down' : ''}`}>
       <div className="navbar-logo-container">
         <img src={logo} alt="Caldwell Robotics" className="navbar-logo" />
         <h1 className="navbar-title">Caldwell Robotics</h1>

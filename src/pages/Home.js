@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import Lottie from 'react-lottie';
 import logo from '../assets/logo.png'; // Import your logo
 import homeAnimation from '../assets/animations/homeAnimation.json'; // Import your JSON animation
@@ -18,8 +19,7 @@ const Home = () => {
 
   // Dummy data for events
   const upcomingEvents = [
-    { name: 'Ideathon and Data Campaign', location: 'CougarDen', date: '2024-11-09', registerLink: '/register/1',      description: 'bla bla bllka' 
-    },
+    { name: 'Ideathon and Data Campaign', location: 'CougarDen', date: '2024-11-09', registerLink: '/register/1', description: 'bla bla bllka' },
   ];
 
   const pastEvents = [
@@ -29,14 +29,19 @@ const Home = () => {
       galleryLink: '/gallery/robo-soccer', 
       description: 'A thrilling soccer match played by robots, designed by our club members.' 
     },
-   
   ];
+
+  // Intersection Observer for triggering animations
+  const { ref: leftRef, inView: leftInView } = useInView({ triggerOnce: true });
+  const { ref: rightRef, inView: rightInView } = useInView({ triggerOnce: true });
+  const { ref: upcomingRef, inView: upcomingInView } = useInView({ triggerOnce: true });
+  const { ref: pastRef, inView: pastInView } = useInView({ triggerOnce: true });
 
   return (
     <div>
       {/* First container for top part with logo and animation */}
       <div className="home-container">
-        <div className="home-left">
+        <div ref={leftRef} className={`home-left ${leftInView ? 'slide-in-left' : ''}`}>
           <div className="home-title-container">
             <div className="home-title-text">
               <h1 className="home-title-bold">Caldwell</h1>
@@ -48,13 +53,13 @@ const Home = () => {
           </p>
           <a href="/register" className="home-register-link">Register Now</a>
         </div>
-        <div className="home-right">
+        <div ref={rightRef} className={`home-right ${rightInView ? 'slide-in-right' : ''}`}>
           <Lottie options={defaultOptions} height={500} width={900} /> {/* Adjust size if necessary */}
         </div>
       </div>
 
       {/* Upcoming Events */}
-      <div className="events-container"> {/* Common container for consistent sizing */}
+      <div ref={upcomingRef} className={`events-container ${upcomingInView ? 'slide-in-up' : ''}`}>
         <h2 className="section-title">Upcoming Events</h2>
         <UpcomingEvents events={upcomingEvents} />
       </div>
@@ -63,7 +68,7 @@ const Home = () => {
       <div className="divider"></div>
 
       {/* Past Events */}
-      <div className="events-container"> {/* Common container for consistent sizing */}
+      <div ref={pastRef} className={`events-container ${pastInView ? 'slide-in-up' : ''}`}>
         <h2 className="section-title">Past Events</h2>
         <PastEvents events={pastEvents} />
       </div>
