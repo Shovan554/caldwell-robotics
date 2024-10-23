@@ -1,95 +1,52 @@
-/* Full page background */
-.gallery-page {
-  background-color: #f3f4f6; /* Matches the container background */
-  min-height: 100vh; /* Full height of the viewport */
-  display: flex;
-  flex-direction: column; /* Align content vertically */
-  justify-content: flex-start; /* Move content to the top */
-  align-items: center;
-  padding-top: 20px; /* Add a bit of padding at the top */
+.gallery-page{
+  padding: 2rem;
+  padding-bottom: 6rem;
+  background-color: #f4f4f9; /* Light background */
 }
-
-/* Container for the entire gallery */
-.gallery-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f3f4f6;
-  text-align: center;
-}
-
-/* Title of the gallery */
-.gallery-title {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #333;
-  margin-top: 0; /* Remove extra margin at the top */
-}
-
-/* Container to hold all the images in a horizontal scroll */
-.gallery-images {
-  display: flex;
-  flex-direction: row; /* Make the images go horizontally */
-  gap: 15px; /* Space between images */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  padding-bottom: 10px;
-  scroll-snap-type: x mandatory; /* Smooth snapping when scrolling */
-}
-
-.gallery-page-title{
+.gallery-title{
   font-size: 3.5rem;
-    font-weight: bold;
-    color: #2d2d2d;
-    font-weight: bold;
+  font-weight: bold;
+  text-align: center;
+  color: #c81e1e;
 }
-.gallery-image {
-  width: 200px; /* Set width */
-  height: 200px; /* Set height */
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  object-fit: cover; /* Make sure the image fits well */
-  scroll-snap-align: center; /* Snap the images to the center when scrolling */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
-  cursor: pointer;
+.masonry-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #2d2d2d;
+  margin-bottom: 1.5rem;
 }
-
-/* Hover effect to enlarge the image */
-.gallery-image:hover {
-  transform: scale(1.2); /* Scale the image by 1.2 times on hover */
-  z-index: 1; /* Ensure the image hovers over the others */
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 15px; /* Space between images */
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.image-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+.masonry-item {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  filter: brightness(55%);
 }
 
-
-.modal-image {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 8px;
+.masonry-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* Ensures the image covers the full area while maintaining aspect ratio */
+  border-radius: 10px;
+  border: 1.5px solid #2d2d2d79;
 }
 
-
-.close-button {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  font-size: 3rem;
-  color: white;
-  cursor: pointer;
-  z-index: 1001;
+/* Add hover effect for images */
+.masonry-item:hover {
+  transform: scale(1.75); /* Slight zoom on hover */
+  z-index: 1;
+  filter: brightness(1);
 }
 
-.close-button:hover {
-  color: #ff6347; /* Change color on hover */
+.main-container{
+  margin-top: 4rem;
 }
