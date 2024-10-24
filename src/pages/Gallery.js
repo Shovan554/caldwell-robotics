@@ -17,8 +17,8 @@ const Gallery = () => {
 };
 
 const imagePaths = {
-  robosoccer: require.context('../../public/gallery/roboSoccer', false, /\.(png|jpe?g|svg)$/),
-  builds: require.context('../../public/gallery/projects', false, /\.(png|jpe?g|svg)$/),
+  robosoccer: require.context('../../public/gallery/roboSoccer', false, /\.(png|jpe?g|svg|webp)$/),
+  builds: require.context('../../public/gallery/projects', false, /\.(png|jpe?g|svg|webp)$/),
   // Add more paths as needed
 };
 
