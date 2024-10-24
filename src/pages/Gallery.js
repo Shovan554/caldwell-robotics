@@ -36,7 +36,12 @@ const GalleryBlock = ({ title, path }) => {
       <div className="masonry-grid">
         {images.map((image, index) => (
           <div key={index} className="masonry-item">
-            <img src={image} alt={`${title} ${index}`} className="masonry-img" />
+            <img
+             src={image}
+             alt={`${title} ${index}`}
+             className="masonry-img" 
+             loading='lazy'
+            />
           </div>
         ))}
       </div>
