@@ -14,6 +14,14 @@ const Footer = () => {
           >
             Shovan Raut
           </a>{" "}
+          ,{" "}
+          <a
+            href="https://www.instagram.com/_deepan_w/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Deepan Wagle
+          </a>{" "}
           &{" "}
           <a
             href="https://nkhanal.vercel.app"
