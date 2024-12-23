@@ -17,8 +17,8 @@ const Gallery = () => {
 };
 
 const imagePaths = {
-  robosoccer: require.context('../../public/gallery/roboSoccer', false, /\.(png|jpe?g|svg)$/),
-  builds: require.context('../../public/gallery/projects', false, /\.(png|jpe?g|svg)$/),
+  robosoccer: require.context('../../public/gallery/roboSoccer', false, /\.(png|jpe?g|svg|webp)$/),
+  builds: require.context('../../public/gallery/projects', false, /\.(png|jpe?g|svg|webp)$/),
   // Add more paths as needed
 };
 
@@ -36,7 +36,12 @@ const GalleryBlock = ({ title, path }) => {
       <div className="masonry-grid">
         {images.map((image, index) => (
           <div key={index} className="masonry-item">
-            <img src={image} alt={`${title} ${index}`} className="masonry-img" />
+            <img
+             src={image}
+             alt={`${title} ${index}`}
+             className="masonry-img" 
+             loading='lazy'
+            />
           </div>
         ))}
       </div>
